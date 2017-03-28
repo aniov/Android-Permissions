@@ -19,13 +19,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onHelloWordClick(View view) {
-        //testExplicitIntent();
-        testInternetPlayer();
+        testExplicitIntent();
+        //testInternetPlayer();
     }
 
     private void testInternetPlayer() {
         try {
-            String url = "http://indiespectrum.com:9000/";
+            String url = "http://sorradio.org:5005/live";
             MediaPlayer mediaPlayer = new MediaPlayer();
             mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
             mediaPlayer.setDataSource(url);
